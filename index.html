@@ -18,24 +18,30 @@
 </head>
 <body>
     <!-- Sticky Navigation -->
-    <nav class="navbar" id="navbar">
-        <div class="nav-container">
-            <div class="logo">Dream Weddings</div>
-            <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-            <ul class="nav-links" id="navLinks">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#reviews">Reviews</a></li>
-                <li><a href="#faq">FAQ</a></li>
-            </ul>
-            <a href="#contact" class="cta-button">Book Consultation</a>
-        </div>
-    </nav>
+   <nav class="navbar" id="navbar">
+    <div class="nav-container">
+        <div class="logo" style="font-style: italic;">ADL Weddings</div>
+        
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
 
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#reviews">Love Notes</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            
+            <li class="mobile-only-btn">
+                <a href="#contact" class="mobile-cta">Book Consultation</a>
+            </li>
+        </ul>
+        
+        <a href="#contact" class="cta-button desktop-only-btn">Book Consultation</a>
+    </div>
+</nav>
     <!-- Hero Section -->
     <section class="hero" id="home">
         bg
@@ -295,8 +301,12 @@ Weddings We've Crafted
     <!-- Smart Filter Contact Form -->
     <section class="contact" id="contact">
         <div class="container">
-            <h2 class="section-title">Let's Create Magic Together</h2>
-            <p class="section-subtitle">Share your vision and we'll bring it to life</p>
+            <p style="color: goldenrod;text-align: center;">GET IN TOUCH</p>
+            <h2 class="section-title">
+
+Let's Plan Your Dream Wedding
+</h2>
+            <p class="section-subtitle">Fill out the form below and we'll get back to you within 30 mins to schedule your complimentary consultation.</p>
             
             <form class="contact-form" id="contactForm">
                 <div class="form-row">
@@ -306,7 +316,7 @@ Weddings We've Crafted
                     </div>
                     
                     <div class="form-group">
-                        <label for="phone">WhatsApp Number *</label>
+                        <label for="phone">Phone Number *</label>
                         <input type="tel" id="phone" name="phone" placeholder="+91 XXXXX XXXXX" required>
                     </div>
                 </div>
@@ -348,7 +358,7 @@ Weddings We've Crafted
                 </div>
                 
                 <button type="submit" class="btn btn-primary btn-submit">
-                    <span class="btn-text">Submit Inquiry</span>
+                    <span class="btn-text">Request Consultant</span>
                     <span class="btn-loader" style="display: none;">
                         <i class="fas fa-spinner fa-spin"></i> Processing...
                     </span>

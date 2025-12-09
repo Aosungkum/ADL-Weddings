@@ -963,17 +963,20 @@ section {
 }
 
 /* ========================================
-   SUCCESS MODAL POPUP
+   SUCCESS MODAL POPUP (Fixed)
 ======================================== */
 .modal {
-    display: none; /* Hidden by default */
+    display: none; 
     position: fixed;
-    z-index: 2000; /* Sit on top of everything */
+    z-index: 2000;
     left: 0;
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Black background with opacity */
+    /* Darker Black Overlay (0.8 instead of 0.5) */
+    background-color: rgba(0, 0, 0, 0.8); 
+    /* Optional: Blurs the website behind the popup for a premium look */
+    backdrop-filter: blur(5px);
     align-items: center;
     justify-content: center;
     opacity: 0;
@@ -981,32 +984,34 @@ section {
 }
 
 .modal.show {
-    display: flex; /* Show when active */
+    display: flex;
     opacity: 1;
 }
 
 .modal-content {
-    background-color: var(--white);
+    /* FORCE SOLID WHITE BACKGROUND */
+    background-color: #ffffff !important; 
     padding: 40px;
     border-radius: 15px;
     text-align: center;
     max-width: 450px;
     width: 90%;
-    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.3);
     position: relative;
     transform: translateY(-20px);
     transition: transform 0.3s ease;
+    border: 1px solid #f0f0f0; /* Slight border definition */
 }
 
 .modal.show .modal-content {
-    transform: translateY(0); /* Slide down animation */
+    transform: translateY(0);
 }
 
 .close-modal {
     position: absolute;
     top: 15px;
     right: 20px;
-    color: #aaa;
+    color: #999;
     font-size: 28px;
     font-weight: bold;
     cursor: pointer;
@@ -1014,24 +1019,24 @@ section {
 }
 
 .close-modal:hover {
-    color: var(--dark-grey);
+    color: #333;
 }
 
 .modal-icon {
     font-size: 50px;
-    color: #25d366; /* WhatsApp Green/Success Green */
+    color: #25d366; 
     margin-bottom: 20px;
 }
 
 .modal-content h3 {
-    color: var(--dark-grey);
+    color: #333;
     margin-bottom: 15px;
     font-size: 24px;
     font-family: 'Playfair Display', serif;
 }
 
 .modal-content p {
-    color: var(--light-grey);
+    color: #666;
     margin-bottom: 25px;
 }
 

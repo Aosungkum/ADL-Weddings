@@ -32,16 +32,16 @@ navLinks.querySelectorAll('a').forEach(link => {
 });
 
 // ========================================
-// STICKY NAVBAR EFFECT (Updated)
+// STICKY NAVBAR EFFECT
 // ========================================
 const navbar = document.getElementById('navbar');
 
 window.addEventListener('scroll', () => {
-    // If user scrolls down more than 50px, add the 'scrolled' class
+    // If scrolled more than 50px, turn white
     if (window.scrollY > 50) {
         navbar.classList.add('scrolled');
     } else {
-        // Otherwise remove it (make it transparent again)
+        // Otherwise be transparent
         navbar.classList.remove('scrolled');
     }
 });
